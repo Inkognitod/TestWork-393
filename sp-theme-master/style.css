@@ -1,0 +1,229 @@
+/*
+Theme Name: SP Theme
+Theme URI: https://cms3.ru/wordpress-pustaya-tema/
+Author: Alex Kuimov
+Author URI: https://cms3.ru
+Description: The blank wordpress theme
+Version: 1.0.0
+Text Domain: sp-theme
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*WordPress Core*/
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%;
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
+.gallery-caption {
+    display: block;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+
+
+
+/* my style */
+
+
+/* header */
+.header {
+    padding: 20px 0;
+    border-bottom: solid 1px #ccc;
+    box-shadow: 0 0 4px 1px #ccc;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.header ul.nav li {
+    padding: 0 10px;
+}
+.header ul.nav li a{
+	font-size: 1.4em;
+	color:#212529;
+}
+
+ /* content */
+.page-content {
+    padding: 60px 0;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    margin: 1.45em 3.8% 1.45em 0;
+	padding:16px;
+	transition: all .3s;
+}
+.woocommerce ul.products li.product:hover, .woocommerce-page ul.products li.product:hover {
+    box-shadow: 0 0 6px 1px #eaeaea;
+	transition: all .3s;
+}
+
+#front_product_create{
+	margin: 40px 0;
+    max-width: 400px;
+    width: 100%;
+}
+#front_product_create div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+#front_product_create div label{
+	flex: 0 1 40%;
+}
+#front_product_create div input, #front_product_create div select{
+	flex: 0 1 60%;
+}
+#front_product_create input[type="submit"], #front_product_create input[type="reset"]{
+	width: calc(100%/2 - 3px);
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px 6px;
+    cursor: pointer;
+    transition: all .3s;
+}
+#front_product_create input[type="submit"]{
+    border: 1px solid #8bc34a;
+}
+#front_product_create input[type="reset"]{
+    border: 1px solid #ff5722;
+}
+#front_product_create input[type="submit"]:hover {
+	background: #8bc34a;
+	transition: all .3s;
+	color: #fff;
+}
+#front_product_create input[type="reset"]:hover {
+	background: #ff5722;
+	transition: all .3s;
+	color: #fff;
+}
+h2.woocommerce-loop-product__title {
+    color: #000;
+}
+p.my_product_value {
+    margin: 0;
+	color: #000;
+}
+p.my_product_value span{
+	font-weight:bold;
+}
+
+
+/* adaptive */
+@media screen and (max-width:480px)  {
+	.header .container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		gap: 20px;
+	}
+}
